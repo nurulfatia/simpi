@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f4f4f4;
+  color: #222;
+}
+
+/* ---------- Halaman Login ---------- */
+.halaman-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #0f3b3e;
+}
+
+.kotak-login {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  width: 320px;
+  text-align: center;
+}
+
+.kotak-login h2 {
+  margin: 0 0 5px 0;
+  color: #0f3b3e;
+}
+
+.kotak-login p {
+  font-size: 13px;
+  color: #555;
+}
+
+.kotak-login form {
+  text-align: left;
+  margin-top: 15px;
+}
+
+.kotak-login label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 4px;
+  margin-top: 10px;
+}
+
+.kotak-login input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.kotak-login button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  background: #c4602e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pesan-error {
+  background: #fde2e2;
+  color: #b2432f;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.catatan {
+  font-size: 11px;
+  color: #888;
+  margin-top: 15px;
+}
+
+/* ---------- Layout Setelah Login ---------- */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  background: #0f3b3e;
+  color: #edd;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  color: #fff;
+  margin: 0 0 2px 0;
+  font-size: 20px;
+}
+
+.sidebar .sub {
+  font-size: 11px;
+  color: #9fc1be;
+  margin-bottom: 20px;
+}
+
+.sidebar .menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar .menu li a {
+  display: block;
+  padding: 10px;
+  color: #cfe3df;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 3px;
+  font-size: 14px;
+}
+
+.sidebar .menu li a:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+.sidebar .menu li a.aktif {
+  background: #c4602e;
+  color: #fff;
+}
+
+.sidebar .keluar {
+  display: block;
+  margin-top: 30px;
+  color: #f0c7b8;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+main {
+  margin-left: 220px;
+  padding: 30px;
+}
+
+main h1 {
+  color: #0a2c2e;
+  margin-bottom: 2px;
+}
+
+.subjudul {
+  color: #666;
+  font-size: 13px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* ---------- Statistik Dashboard ---------- */
+.kotak-statistik {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.kotak-statistik .kotak {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-left: 4px solid #c4602e;
+  border-radius: 6px;
+  padding: 15px;
+  flex: 1;
+}
+
+.kotak-statistik .kotak span {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.kotak-statistik .kotak b {
+  font-size: 22px;
+  color: #0a2c2e;
+}
+
+/* ---------- Form ---------- */
+.form-baris {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.form-baris input,
+.form-baris select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.form-baris button {
+  padding: 8px 16px;
+  background: #c4602e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-inline {
+  display: flex;
+  gap: 6px;
+}
+
+.form-inline select {
+  padding: 4px;
+  font-size: 12px;
+}
+
+.form-inline button {
+  padding: 4px 8px;
+  font-size: 12px;
+  background: #0f3b3e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* ---------- Tabel ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  font-size: 13px;
+}
+
+th {
+  background: #0f3b3e;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.tautan-hapus {
+  color: #b2432f;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.status {
+  padding: 3px 8px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.status.diajukan { background: #f5e6d3; color: #b8862c; }
+.status.diproses { background: #dce9f5; color: #2e5f8a; }
+.status.selesai  { background: #deeee2; color: #3e7a52; }
+.status.ditolak  { background: #f5dad3; color: #b2432f; }
+
+.tombol-cetak {
+  margin-bottom: 15px;
+  padding: 8px 16px;
+  background: #0f3b3e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
